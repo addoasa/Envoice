@@ -177,7 +177,7 @@ class App extends Component {
                 >
                 Click Here to preview!
                 </Button>
-
+          <MyModalWithGrid />
 
         </header>
       </div>
