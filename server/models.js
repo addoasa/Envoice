@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const bcrypt = require('bcrypt');
 const SALT = 5;
-
+//salt is what you add to the hash. hashing is what you are doing to the password to encrypt it- safe guard passwords in storage. 
 
 //accessing a database called invoice_db so that models can be placed
 // const db = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost:9000/invoice_db', {

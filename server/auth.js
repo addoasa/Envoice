@@ -1,10 +1,10 @@
 const JwtStrategy = require('passport-jwt').Strategy;
-const ExtractJwt = require('passport-jwt').ExtractJwt;
+const ExtractJwt = require('passport-jwt').ExtractJwt;//javascript web token. How we token a session. We put in local storage. Does this person have a valid token. People wont get a token unless they log in.
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const { User } = require('./models');
 
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken'); // what is running through to make the token
 const SECRET = "my super duper secret sacrt";
 const sign = (payload) => jwt.sign(payload, SECRET);
 
